@@ -34,32 +34,30 @@ export default function ReviewCard({ cardData }: ReviewCardProps) {
 
   return (
     <div>
-      <Card sx={{ maxWidth: 345 }}>
+      <Card>
         <CardActionArea onClick={handleCardClick}>
-          <CardActionArea onClick={handleCardClick}>
-            <CardHeader
-              avatar={<Avatar aria-label="recipe">R</Avatar>}
-              action={
-                <IconButton aria-label="settings">
-                  <MoreVertIcon />
-                </IconButton>
-              }
-              title={cardData.title}
-              subheader={cardData.subheader}
-            />
-            <CardMedia
-              component="img"
-              height="194"
-              image="/pc-girls2.png"
-              alt="PC Girls"
-            />
-            <CardContent>
-              <Typography variant="body2" color="text.secondary">
-                Next.jsとNode.jsを使ったWebエンジニアを募集しています。
-                それ以外にも、React.jsやVue.jsなどのフロントエンドの経験があると尚良いです。
-              </Typography>
-            </CardContent>
-          </CardActionArea>
+          <CardHeader
+            avatar={<Avatar aria-label="recipe">R</Avatar>}
+            action={
+              <IconButton aria-label="settings">
+                <MoreVertIcon />
+              </IconButton>
+            }
+            title={cardData.title}
+            subheader={cardData.subheader}
+          />
+          <CardMedia
+            component="img"
+            height="194"
+            image="/pc-girls2.png"
+            alt="PC Girls"
+          />
+          <CardContent>
+            <Typography variant="body2" color="text.secondary">
+              Next.jsとNode.jsを使ったWebエンジニアを募集しています。
+              それ以外にも、React.jsやVue.jsなどのフロントエンドの経験があると尚良いです。
+            </Typography>
+          </CardContent>
         </CardActionArea>
       </Card>
       <SwipeableDrawer
@@ -76,5 +74,5 @@ export default function ReviewCard({ cardData }: ReviewCardProps) {
         </Paper>
       </SwipeableDrawer>
     </div>
-  )
+  );
 }

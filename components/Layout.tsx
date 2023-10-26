@@ -1,7 +1,7 @@
 import React from 'react'
 import AppBarComponent from './AppBarComponent'
 import Head from 'next/head'
-import {Container, Grid, makeStyles, createStyles} from '@mui/material'
+import {Container, Grid} from '@mui/material'
 
 interface LayoutProps {
   children: React.ReactNode
